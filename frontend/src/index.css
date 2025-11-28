@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900;
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.2);
+  border-radius: 10px;
+}
+
+input[type="range"] {
+  height: 8px;
+  border-radius: 5px;
+  background: #d4e8d8;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 18px;
+  width: 18px;
+  background: #3e7c59;
+  border-radius: 50%;
+  cursor: pointer;
+  appearance: none;
+}
+
+/* ---------- MARKDOWN CHAT MESSAGE STYLING ---------- */
+
+.markdown-body {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #14532D;
+}
+
+/* Headings */
+.markdown-body h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.4rem 0;
+}
+
+.markdown-body h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0.35rem 0;
+}
+
+.markdown-body h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
+
+/* Lists */
+.markdown-body ul,
+.markdown-body ol {
+  margin: 0.25rem 0 0.25rem 1.25rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.15rem;
+}
+
+/* Bold + Italic */
+.markdown-body strong {
+  font-weight: 700;
+}
+
+.markdown-body em {
+  font-style: italic;
+}
+
+/* Code (inline) */
+.markdown-body code {
+  background: rgba(20, 83, 45, 0.08);
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+  color: #0f5132;
+}
+
+/* Code blocks */
+.markdown-body pre {
+  background: rgba(20, 83, 45, 0.12);
+  padding: 10px;
+  border-radius: 10px;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+}
+
+.markdown-body pre code {
+  background: none;
+  padding: 0;
+  color: #123c24;
+  font-size: 0.9rem;
+}
+
+/* Blockquote */
+.markdown-body blockquote {
+  border-left: 4px solid #2e8d55;
+  padding-left: 12px;
+  margin: 0.6rem 0;
+  color: #174b34;
+  opacity: 0.95;
+  font-style: italic;
+}
+
+/* Paragraph spacing */
+.markdown-body p {
+  margin: 0.35rem 0;
+}
+
+/* Links */
+.markdown-body a {
+  color: #1b6e44;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
