@@ -1,0 +1,4 @@
+import pickle
+
+model = {"example": "simple placeholder model"}
+pickle.dump(model, open("spending_model.pkl", "wb"))

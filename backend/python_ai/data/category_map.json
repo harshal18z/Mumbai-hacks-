@@ -1,0 +1,6 @@
+{
+  "food": ["restaurant", "grocery", "coffee"],
+  "utilities": ["electricity", "water", "gas", "wifi"],
+  "entertainment": ["movie", "netflix", "game"],
+  "income": ["salary", "bonus", "freelance"]
+}

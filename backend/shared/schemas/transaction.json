@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "date": { "type": "string", "format": "date" },
+    "description": { "type": "string" },
+    "amount": { "type": "number" },
+    "category": { "type": "string" },
+    "type": { "type": "string", "enum": ["Income", "Expense"] }
+  },
+  "required": ["date", "description", "amount", "type"]
+}
